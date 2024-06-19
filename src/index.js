@@ -2,16 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
-import Test from "./Test";
-import Footer from "./components/Footer/Footer";
-import GreyBox from "./components/GreyBox";
+import Test from "./pages/Test";
+import Inicio from "./pages/Inicio";
 import { CssBaseline } from "@mui/material";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Inicio />,
   },
   {
     path: "/test",
@@ -24,7 +22,5 @@ root.render(
   <React.StrictMode>
     <CssBaseline />
     <RouterProvider router={router} />
-    <GreyBox />
-    <Footer />
   </React.StrictMode>
 );
