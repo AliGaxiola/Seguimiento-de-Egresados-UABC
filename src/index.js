@@ -4,6 +4,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Test from "./Test";
+import Footer from "./components/Footer/Footer";
+import GreyBox from "./components/GreyBox";
 import { CssBaseline } from "@mui/material";
 
 const router = createBrowserRouter([
@@ -22,5 +24,7 @@ root.render(
   <React.StrictMode>
     <CssBaseline />
     <RouterProvider router={router} />
+    <GreyBox />
+    <Footer />
   </React.StrictMode>
 );
