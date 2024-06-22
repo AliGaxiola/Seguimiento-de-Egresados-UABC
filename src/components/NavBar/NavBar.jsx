@@ -52,7 +52,7 @@ function NavBar() {
                 isSmallScreen ? "/assets/Logo_chico.png" : "/assets/Logo.png"
               } // Cambiar imagen en pantallas pequeñas
               alt="UABC Logo"
-              style={{ height: "auto", width: "100%" }} // Imagen responsiva
+              style={{ height: "auto", width: "100%" }}
             />
           </Box>
 
@@ -113,7 +113,7 @@ function NavBar() {
           }}
         >
           <Link
-            href="/test"
+            href="/"
             underline="none"
             sx={{
               color: "white",
