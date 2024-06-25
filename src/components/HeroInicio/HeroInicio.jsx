@@ -6,10 +6,9 @@ const HeroInicio = () => {
     <Box
       component="div"
       sx={{
-        minHeight: "450px",
+        maxHeight: "450px",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
         overflow: "hidden",
         margin: 0,
       }}
