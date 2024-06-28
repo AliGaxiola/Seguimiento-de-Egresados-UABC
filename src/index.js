@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Test from "./pages/Test";
 import Inicio from "./pages/Inicio";
+import Titulacion from "./pages/Titulacion";
 import { CssBaseline } from "@mui/material";
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <Test />,
+  },
+  {
+    path: "/pasos-titulacion",
+    element: <Titulacion />,
   },
 ]);
 

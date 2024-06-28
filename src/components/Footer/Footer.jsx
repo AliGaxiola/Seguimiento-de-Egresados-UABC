@@ -12,6 +12,7 @@ const Footer = () => {
         color: "white",
         borderTop: "1px solid black",
         justifyContent: "space-around",
+        marginTop: "120px"
       }}
     >
       <Box sx={{ mb: 1 }}>

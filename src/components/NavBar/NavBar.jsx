@@ -139,7 +139,7 @@ function NavBar() {
             Actos Académicos
           </Link>
           <Link
-            href="/test"
+            href="/pasos-titulacion"
             underline="none"
             sx={{
               color: "white",
