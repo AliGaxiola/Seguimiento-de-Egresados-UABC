@@ -11,7 +11,7 @@ import Boton from "../../Boton.jsx/Boton";
 function GridTitulacion() {
   return (
     <>
-      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2}}>
+      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
         <Grid container gap={2}>
           <Grid
             item
@@ -29,9 +29,9 @@ function GridTitulacion() {
             >
               Titulación- PASO 1
             </Typography>
-           <Box sx = {{display: 'flex', justifyContent: 'center'}}>
-           <Boton texto="Requisitos y procesos para la titulación, en sólo 3 pasos." />
-           </Box>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Boton texto="Requisitos y procesos para la titulación, en sólo 3 pasos." />
+            </Box>
             <Paso1A />
           </Grid>
           <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
@@ -46,7 +46,7 @@ function GridTitulacion() {
         </Grid>
       </Box>
 
-      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: "10px"}}>
+      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: "10px" }}>
         <Grid container gap={2}>
           <Grid
             item
@@ -55,11 +55,7 @@ function GridTitulacion() {
           >
             <Etapa2Paso1A />
           </Grid>
-          <Grid
-            item
-            xs={12}
-            sx={{ width: "auto", height: "auto" }}
-          >
+          <Grid item xs={12} sx={{ width: "auto", height: "auto" }}>
             <Flechas
               textoIzquierda="Regresar a inicio"
               textoDerecha="Avanzar a paso 2"
