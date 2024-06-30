@@ -199,13 +199,25 @@ function NavBar() {
               },
             }}
           >
-            <MenuItem component={RouterLink} to="/test" onClick={handleClose}>
+            <MenuItem
+              component={RouterLink}
+              to="/galeria-actos-academicos"
+              onClick={handleClose}
+            >
               Actos Académicos
             </MenuItem>
-            <MenuItem component={RouterLink} to="/test" onClick={handleClose}>
+            <MenuItem
+              component={RouterLink}
+              to="/galeria-tomas-protesta"
+              onClick={handleClose}
+            >
               Toma de Protesta
             </MenuItem>
-            <MenuItem component={RouterLink} to="/test" onClick={handleClose}>
+            <MenuItem
+              component={RouterLink}
+              to="/galeria-potenciales-egresar"
+              onClick={handleClose}
+            >
               Ceremonia Potenciales a Egresar
             </MenuItem>
           </Menu>
