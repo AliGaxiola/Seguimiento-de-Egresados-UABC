@@ -126,7 +126,7 @@ function NavBar() {
             Inicio
           </Link>
           <Link
-            href="/test"
+            href="/actos-academicos"
             underline="none"
             sx={{
               color: "white",

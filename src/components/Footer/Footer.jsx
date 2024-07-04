@@ -37,7 +37,7 @@ const Footer = () => {
           Enlaces de interés
         </Typography>
         <List>
-          <ListItem>
+          <ListItem sx={{p: '0'}}>
             <Link
               href="http://ftm.tij.uabc.mx/"
               target="_blank"
@@ -48,7 +48,8 @@ const Footer = () => {
               Facultad de Turismo y Mercadotecnia
             </Link>
           </ListItem>
-          <ListItem>
+          <br />
+          <ListItem sx={{p: '0'}}>
             <Link
               href="http://www.bolsadetrabajo.uabc.mx/vacantes/empleos/inicio/"
               target="_blank"

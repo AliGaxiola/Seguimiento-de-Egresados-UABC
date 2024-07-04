@@ -14,7 +14,7 @@ const HeroInicio = () => {
       }}
     >
       <img
-        src="/assets/hero.jpg"
+        src="/assets/foto-hero-calidad.jpeg"
         alt="Background"
         style={{
           width: "100%",

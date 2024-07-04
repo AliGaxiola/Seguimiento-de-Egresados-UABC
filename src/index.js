@@ -9,6 +9,7 @@ import { CssBaseline } from "@mui/material";
 import GaleriaActos from "./pages/GaleriaActos";
 import GaleriaPotenciales from "./pages/GaleriaPotenciales";
 import GaleriaTomas from "./pages/GaleriaTomas";
+import Actos from "./pages/Actos";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
     path: "/galeria-tomas-protesta",
     element: <GaleriaTomas />,
   },
+  {
+    path: "/actos-academicos",
+    element: <Actos />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

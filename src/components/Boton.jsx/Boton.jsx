@@ -12,9 +12,13 @@ const CustomButton = styled(Button)({
   },
 });
 
-function Boton({ texto }) {
+function Boton({ texto, pdfUrl }) {
+  const handleClick = () => {
+    window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <CustomButton variant="contained">
+    <CustomButton variant="contained" onClick={handleClick}>
       {texto}
     </CustomButton>
   );

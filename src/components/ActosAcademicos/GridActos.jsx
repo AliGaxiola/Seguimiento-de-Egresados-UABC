@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid, Box, Typography } from "@mui/material";
-import Paso1A from "../Etapa1Paso1A/Paso1A";
-import Paso1B from "../Etapa1Paso1B/Paso1B";
-import Paso1C from "../Etapa1Paso1C/Paso1C";
-import Paso1D from "../Etapa1Paso1D/Paso1D";
-import Etapa2Paso1A from "../Etapa2Paso1/Etapa2Paso1A";
-import Flechas from "../../Flechas/Flechas";
-import Boton from "../../Boton.jsx/Boton";
-import pdfUrl from "../../../pdfs/Pasos Titulación-GENERAL.pdf";
+import Paso1A from "../Titulacion/Etapa1Paso1A/Paso1A";
+import Paso1B from "../Titulacion/Etapa1Paso1B/Paso1B";
+import Paso1C from "../Titulacion/Etapa1Paso1C/Paso1C";
+import Paso1D from "../Titulacion/Etapa1Paso1D/Paso1D";
+import Etapa2Paso1A from "../Titulacion/Etapa2Paso1/Etapa2Paso1A";
+import Flechas from "../../components/Flechas/Flechas";
+import Boton from "../../components/Boton.jsx/Boton";
+import pdfUrl from "../../../src/pdfs/Paso 1 - Titulación-acto académico.pdf";
 
 function GridTitulacion() {
   return (
@@ -28,11 +28,11 @@ function GridTitulacion() {
                 marginBottom: 2,
               }}
             >
-              Titulación - PASO 1
+              Actos Academicos 
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Boton
-                texto="Requisitos y procesos para la titulación, en sólo 3 pasos."
+                texto="Requisitos y procesos para actos academicos."
                 pdfUrl={pdfUrl}
               />
             </Box>
@@ -58,13 +58,6 @@ function GridTitulacion() {
             sx={{ border: "1px solid green", width: "auto", height: "auto" }}
           >
             <Etapa2Paso1A />
-          </Grid>
-          <Grid item xs={12} sx={{ width: "auto", height: "auto" }}>
-            <Flechas
-              textoIzquierda="Regresar a inicio"
-              textoDerecha="Avanzar a paso 2"
-              textoInferior="Importante: espera el correo de confirmación para pasar al paso 2."
-            />
           </Grid>
         </Grid>
       </Box>
