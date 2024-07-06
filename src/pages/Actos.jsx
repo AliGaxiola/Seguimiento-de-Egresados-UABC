@@ -1,14 +1,14 @@
 import React from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'
-import GridActos from '../components/ActosAcademicos/GridActos'
+import GridActosPaso1 from '../components/ActosAcademicos/GridActosPaso1'
 
 function Actos() {
   return (
     <>
     <NavBar />
 
-    <GridActos />
+    <GridActosPaso1 />
 
     <Footer />
   </>

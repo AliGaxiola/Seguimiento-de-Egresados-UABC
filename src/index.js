@@ -10,6 +10,7 @@ import GaleriaActos from "./pages/GaleriaActos";
 import GaleriaPotenciales from "./pages/GaleriaPotenciales";
 import GaleriaTomas from "./pages/GaleriaTomas";
 import Actos from "./pages/Actos";
+import Paso3Titulacion from "./pages/TitulacionPasoTres";
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,11 @@ const router = createBrowserRouter([
   {
     path: "/actos-academicos",
     element: <Actos />,
-  }
+  },
+  {
+    path: "/paso-tres-titulacion",
+    element: <Paso3Titulacion />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
