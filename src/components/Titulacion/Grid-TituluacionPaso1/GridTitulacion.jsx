@@ -5,7 +5,7 @@ import Paso1B from "../Etapa1Paso1B/Paso1B";
 import Paso1C from "../Etapa1Paso1C/Paso1C";
 import Paso1D from "../Etapa1Paso1D/Paso1D";
 import Etapa2Paso1A from "../Etapa2Paso1/Etapa2Paso1A";
-import Flechas from "../../Flechas/Flechas";
+//import Flechas from "../../Flechas/Flechas";
 import Boton from "../../Boton.jsx/Boton";
 import pdfUrl from "../../../pdfs/Pasos Titulación-GENERAL.pdf";
 
@@ -14,11 +14,7 @@ function GridTitulacion() {
     <>
       <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
         <Grid container gap={2}>
-          <Grid
-            item
-            xs={12}
-            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
-          >
+          <Grid item xs={12}>
             <Typography
               variant="h3"
               component="h2"
@@ -28,7 +24,26 @@ function GridTitulacion() {
                 marginBottom: 2,
               }}
             >
-              Titulación - PASO 1
+              TITULACIÓN
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+          >
+            <Typography
+              variant="h4"
+              component="h2"
+              sx={{
+                textAlign: "center",
+                fontWeight: "bold",
+                marginBottom: 2,
+                mt: "30px"
+              }}
+            >
+              PASO 1 - CERTIFICADO DE ESTUDIOS PROFESIONALES
+              Y CERTIFICACIÓN DE PASANTE
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Boton
@@ -60,11 +75,18 @@ function GridTitulacion() {
             <Etapa2Paso1A />
           </Grid>
           <Grid item xs={12} sx={{ width: "auto", height: "auto" }}>
-            <Flechas
-              textoIzquierda="Regresar a inicio"
-              textoDerecha="Avanzar a paso 2"
-              textoInferior="Importante: espera el correo de confirmación para pasar al paso 2."
-            />
+            <Typography
+              variant="body1"
+              sx={{
+                textAlign: "center",
+                fontWeight: "bold",
+                marginTop: 2,
+                fontStyle: 'italic'
+
+              }}
+            >
+              Importante: espera el correo de confirmación para pasar al paso 2.
+            </Typography>
           </Grid>
         </Grid>
       </Box>
