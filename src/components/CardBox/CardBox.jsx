@@ -20,25 +20,33 @@ function CardBox({ image, title, content }) {
 
   return (
     <>
-      <Card sx={{ maxWidth: 345, minWidth: 300 }}>
+      <Card sx={{ maxWidth: 345, minWidth: 345 }}>
         <CardActionArea onClick={handleClickOpen}>
           <CardMedia
             component="img"
-            height="200"
             image={image}
             alt={title}
-            sx={{ objectFit: "cover" }}
+            sx={{
+              objectFit: "cover",
+              height: 200,
+            }}
           />
-          <CardContent>
+          <CardContent
+            sx={{ height: "100%", display: "flex", flexDirection: "column" }}
+          >
             <Typography
               gutterBottom
               variant="h5"
               component="div"
-              sx={{ color: "green" }}
+              sx={{ color: "green", textAlign: "center", flex: "0 0 auto" }}
             >
               {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ flex: "1 0 auto" }}
+            >
               {content}
             </Typography>
           </CardContent>

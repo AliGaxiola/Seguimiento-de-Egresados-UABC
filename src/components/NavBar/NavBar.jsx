@@ -71,7 +71,7 @@ function NavBar() {
               component="h1"
               sx={{
                 marginBottom: 1,
-                fontSize: { xs: "1.5rem", md: "2rem" },
+                fontSize: { xs: "1.5rem", md: "2.5rem" },
                 fontWeight: "medium",
                 color: "green",
               }}
@@ -120,6 +120,7 @@ function NavBar() {
               flexBasis: "auto",
               "&:hover": {
                 bgcolor: "darkgreen",
+                color: "#dd971a",
               },
             }}
           >
@@ -133,6 +134,7 @@ function NavBar() {
               flexBasis: "auto",
               "&:hover": {
                 bgcolor: "darkgreen",
+                color: "#dd971a",
               },
             }}
           >
@@ -146,6 +148,7 @@ function NavBar() {
               flexBasis: "auto",
               "&:hover": {
                 bgcolor: "darkgreen",
+                color: "#dd971a",
               },
             }}
           >
@@ -159,6 +162,7 @@ function NavBar() {
               flexBasis: "auto",
               "&:hover": {
                 bgcolor: "darkgreen",
+                color: "#dd971a",
               },
             }}
           >
@@ -173,6 +177,7 @@ function NavBar() {
               flexBasis: "auto",
               "&:hover": {
                 bgcolor: "darkgreen",
+                color: "#dd971a",
               },
             }}
           >
@@ -193,6 +198,7 @@ function NavBar() {
                   color: "white",
                   "&:hover": {
                     bgcolor: "darkgreen",
+                    color: "#dd971a",
                   },
                 },
                 marginTop: 1,

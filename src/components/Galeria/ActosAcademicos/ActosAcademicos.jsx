@@ -10,13 +10,24 @@ function ActosAcademicos() {
 
       <Container maxWidth="xl" sx={{ marginBottom: 4 }}>
         {/* Generacion 2024-1 */}
-        <Typography
-          variant="h4"
-          component="h2"
-          sx={{ marginBottom: 5, textAlign: "center" }}
-        >
-          2024-1
-        </Typography>
+        <Grid container justifyContent="center">
+          <Grid item xs={10} sm={12} md={11}>
+            <Typography
+              variant="h4"
+              component="h2"
+              sx={{
+                marginBottom: 5,
+                textAlign: "center",
+                fontSize: 28,
+                bgcolor: "#dd971a",
+                borderRadius: 1,
+                padding: 1,
+              }}
+            >
+              2024-1
+            </Typography>
+          </Grid>
+        </Grid>
         <Grid container spacing={2} justifyContent="center">
           <Grid
             item
@@ -63,13 +74,25 @@ function ActosAcademicos() {
         </Grid>
 
         {/* Generacion 2023-2 */}
-        <Typography
-          variant="h4"
-          component="h2"
-          sx={{ marginTop: 5, marginBottom: 5, textAlign: "center" }}
-        >
-          2023-2
-        </Typography>
+        <Grid container justifyContent="center">
+          <Grid item xs={10} sm={12} md={11}>
+            <Typography
+              variant="h4"
+              component="h2"
+              sx={{
+                marginTop: 4,
+                marginBottom: 5,
+                textAlign: "center",
+                fontSize: 28,
+                bgcolor: "#dd971a",
+                borderRadius: 1,
+                padding: 1,
+              }}
+            >
+              2023-2
+            </Typography>
+          </Grid>
+        </Grid>
         <Grid container spacing={2} justifyContent="center">
           <Grid
             item
@@ -158,13 +181,25 @@ function ActosAcademicos() {
         </Grid>
 
         {/* Generacion 2023-1 */}
-        <Typography
-          variant="h4"
-          component="h2"
-          sx={{ marginTop: 4, marginBottom: 5, textAlign: "center" }}
-        >
-          2023-1
-        </Typography>
+        <Grid container justifyContent="center">
+          <Grid item xs={10} sm={12} md={11}>
+            <Typography
+              variant="h4"
+              component="h2"
+              sx={{
+                marginTop: 4,
+                marginBottom: 5,
+                textAlign: "center",
+                fontSize: 28,
+                bgcolor: "#dd971a",
+                borderRadius: 1,
+                padding: 1,
+              }}
+            >
+              2023-1
+            </Typography>
+          </Grid>
+        </Grid>
         <Grid container spacing={2} justifyContent="center">
           <Grid
             item
