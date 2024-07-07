@@ -4,12 +4,16 @@ import Paso3U from '../Paso3/Paso3U';
 import Paso3D from '../Paso3/Paso3D';
 import Paso3T from '../Paso3/Paso3T';
 import Flechas from '../../Flechas/Flechas';
+import Boton from '../../Boton.jsx/Boton';
 
 function GridTitulacionTres() {
     return (
         <>
           <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
             <Grid container gap={2}>
+            <Grid sx={{width: '100%', display: 'flex', justifyContent: 'end'}}>
+                <Boton texto= "Descarga formato ahora"/>
+            </Grid>
               <Grid
                 item
                 xs={12}
@@ -22,6 +26,7 @@ function GridTitulacionTres() {
                     textAlign: "center",
                     fontWeight: "bold",
                     marginBottom: 2,
+                    mt: "30px"
                   }}
                 >
                   PASO 3 - PRESENTAR ANTE COORDINACIÓN DE

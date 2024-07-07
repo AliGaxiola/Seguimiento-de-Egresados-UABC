@@ -6,8 +6,10 @@ import Paso1C from "../Etapa1Paso1C/Paso1C";
 import Paso1D from "../Etapa1Paso1D/Paso1D";
 import Etapa2Paso1A from "../Etapa2Paso1/Etapa2Paso1A";
 //import Flechas from "../../Flechas/Flechas";
-import Boton from "../../Boton.jsx/Boton";
-import pdfUrl from "../../../pdfs/Pasos Titulación-GENERAL.pdf";
+//import Boton from "../../Boton.jsx/Boton";
+//import pdfUrl from "../../../pdfs/Pasos Titulación-GENERAL.pdf";
+import CuadroTexto from "../../CuadroTexto/CuadroTexto";
+import SectionTitle from "../../SectionTitle/SectionTitle";
 
 function GridTitulacion() {
   return (
@@ -15,7 +17,7 @@ function GridTitulacion() {
       <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
         <Grid container gap={2}>
           <Grid item xs={12}>
-            <Typography
+{/*              <Typography
               variant="h3"
               component="h2"
               sx={{
@@ -25,7 +27,8 @@ function GridTitulacion() {
               }}
             >
               TITULACIÓN
-            </Typography>
+            </Typography>  */}
+            <SectionTitle text="TITULACIÓN" textSx={{ fontSize: '50px', marginTop: 0}} boxSx={{my: 0, mb: 2}}/>
           </Grid>
           <Grid
             item
@@ -46,10 +49,11 @@ function GridTitulacion() {
               Y CERTIFICACIÓN DE PASANTE
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Boton
+              {/* <Boton
                 texto="Requisitos y procesos para la titulación, en sólo 3 pasos."
                 pdfUrl={pdfUrl}
-              />
+              /> */}
+               <CuadroTexto texto="REQUISITOS Y PROCESOS PARA LA TITULACIÓN, EN SÓLO 3 PASOS." />
             </Box>
             <Paso1A />
           </Grid>

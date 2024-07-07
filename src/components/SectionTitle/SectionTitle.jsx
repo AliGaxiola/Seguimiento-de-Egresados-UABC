@@ -2,7 +2,7 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
 
-const SectionTitle = ({ text }) => {
+const SectionTitle = ({ text, boxSx, textSx }) => {
   return (
     <Box
       sx={{
@@ -13,6 +13,7 @@ const SectionTitle = ({ text }) => {
         margin: "0 auto",
         position: "relative",
         my: 5,
+        ...boxSx // Aplicando estilos adicionales desde las props
       }}
     >
       <Typography
@@ -32,6 +33,7 @@ const SectionTitle = ({ text }) => {
             height: "1px",
             backgroundColor: "rgba(0, 0, 0, 0.3)",
           },
+          ...textSx // Aplicando estilos adicionales desde las props
         }}
       >
         {text}

@@ -5,8 +5,10 @@ import Paso1B from "../Titulacion/Etapa1Paso1B/Paso1B";
 import Paso1C from "../Titulacion/Etapa1Paso1C/Paso1C";
 import Paso1D from "../Titulacion/Etapa1Paso1D/Paso1D";
 import Etapa2Paso1A from "../Titulacion/Etapa2Paso1/Etapa2Paso1A";
-import Boton from "../Boton.jsx/Boton";
-import pdfUrl from "../../../src/pdfs/Paso 1 - Titulación-acto académico.pdf";
+//import Boton from "../Boton.jsx/Boton";
+//import pdfUrl from "../../../src/pdfs/Paso 1 - Titulación-acto académico.pdf";
+import CuadroTexto from "../CuadroTexto/CuadroTexto";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function GridTitulacion() {
   return (
@@ -14,7 +16,7 @@ function GridTitulacion() {
       <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
         <Grid container justifyContent="center" gap={2}>
           <Grid item xs={12}>
-            <Typography
+            {/* <Typography
               variant="h3"
               component="h2"
               sx={{
@@ -24,7 +26,8 @@ function GridTitulacion() {
               }}
             >
               ACTOS ACADÉMICOS
-            </Typography>
+            </Typography> */}
+             <SectionTitle text="ACTOS ACADÉMICOS" textSx={{ fontSize: '50px', marginTop: 0}} boxSx={{my: 0, mb: 2}}/>
           </Grid>
           <Grid
             item
@@ -45,10 +48,11 @@ function GridTitulacion() {
               PASANTE
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Boton
+              {/* <Boton
                 texto="Requisitos y procesos para actos académicos."
                 pdfUrl={pdfUrl}
-              />
+              /> */}
+              <CuadroTexto texto="REQUISITOS Y PROCESOS PARA ACTOS ACADÉMICOS." />
             </Box>
             <Paso1A />
           </Grid>

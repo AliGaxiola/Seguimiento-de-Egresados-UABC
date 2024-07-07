@@ -51,12 +51,24 @@ function GridTitulacionDos() {
             sx={{ border: "1px solid green", width: "auto", height: "auto" }}
           >
             <Etapa2Paso2A />
+            
           </Grid>
           <Grid item xs={12} sx={{ width: "auto", height: "auto" }}>
+          <Typography
+              variant="body1"
+              sx={{
+                textAlign: "center",
+                fontWeight: "bold",
+                marginTop: 2,
+                fontStyle: 'italic'
+
+              }}
+            >
+              Importante: espera el correo de confirmación para pasar al paso 3.
+            </Typography>
             <Flechas
               textoIzquierda="Regresar a inicio"
               textoDerecha="Avanzar a paso 3"
-              textoInferior="Importante: espera el correo de confirmación para pasar al paso 3."
               rutaIzquierda="/"
               rutaDerecha="/paso-tres-titulacion"
             />
