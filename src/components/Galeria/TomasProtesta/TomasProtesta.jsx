@@ -37,11 +37,17 @@ function TomasProtesta() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox
-              image="/assets/hero.jpg"
-              title="Acto"
-              content="Aquí se coloca la descripción como dónde se realizó el evento, qué facultad lo presentó, su generación, etc."
-            />
+            <CardBox image="/assets/FotosGaleria/TP_2024-1-1.jpeg" />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            display="flex"
+            justifyContent="center"
+          >
+            <CardBox image="/assets/FotosGaleria/TP_2024-1-2.jpeg" />
           </Grid>
         </Grid>
 
@@ -74,11 +80,17 @@ function TomasProtesta() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox
-              image="/assets/hero.jpg"
-              title="Acto"
-              content="Descripción del evento 2023-2."
-            />
+            <CardBox image="/assets/FotosGaleria/TP_2023-2-1.jpeg" />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            display="flex"
+            justifyContent="center"
+          >
+            <CardBox image="/assets/FotosGaleria/TP_2023-2-2.jpeg" />
           </Grid>
         </Grid>
       </Container>

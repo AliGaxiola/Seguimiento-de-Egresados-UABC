@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Test from "./pages/Test";
 import Inicio from "./pages/Inicio";
 import Titulacion from "./pages/Titulacion";
 import { CssBaseline } from "@mui/material";
@@ -11,15 +10,12 @@ import GaleriaPotenciales from "./pages/GaleriaPotenciales";
 import GaleriaTomas from "./pages/GaleriaTomas";
 import Actos from "./pages/Actos";
 import Paso3Titulacion from "./pages/TitulacionPasoTres";
+import PotencialesEgresar from "./pages/PotencialesEgresar";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Inicio />,
-  },
-  {
-    path: "/test",
-    element: <Test />,
   },
   {
     path: "/pasos-titulacion",
@@ -44,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/paso-tres-titulacion",
     element: <Paso3Titulacion />,
+  },
+  {
+    path: "/potenciales-egresar",
+    element: <PotencialesEgresar />,
   },
 ]);
 

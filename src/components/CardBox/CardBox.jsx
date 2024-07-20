@@ -20,36 +20,44 @@ function CardBox({ image, title, content }) {
 
   return (
     <>
-      <Card sx={{ maxWidth: 345, minWidth: 345 }}>
-        <CardActionArea onClick={handleClickOpen}>
+      <Card
+        sx={{
+          maxWidth: 345,
+          minWidth: 345,
+          // Ajusta la altura del Card según si hay título o contenido
+          height: title || content ? "auto" : "200px", // Ajusta la altura aquí
+        }}
+      >
+        <CardActionArea onClick={handleClickOpen} sx={{ height: "100%" }}>
           <CardMedia
             component="img"
             image={image}
             alt={title}
             sx={{
               objectFit: "cover",
-              height: 200,
+              height: title || content ? 200 : "100%",
+              width: "100%",
             }}
           />
-          <CardContent
-            sx={{ height: "100%", display: "flex", flexDirection: "column" }}
-          >
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="div"
-              sx={{ color: "green", textAlign: "center", flex: "0 0 auto" }}
-            >
-              {title}
-            </Typography>
-            <Typography
-              variant="body2"
-              color="text.secondary"
-              sx={{ flex: "1 0 auto" }}
-            >
-              {content}
-            </Typography>
-          </CardContent>
+          {(title || content) && (
+            <CardContent sx={{ display: "flex", flexDirection: "column" }}>
+              {title && (
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "green", textAlign: "center" }}
+                >
+                  {title}
+                </Typography>
+              )}
+              {content && (
+                <Typography variant="body2" color="text.secondary">
+                  {content}
+                </Typography>
+              )}
+            </CardContent>
+          )}
         </CardActionArea>
       </Card>
       <Dialog open={open} onClose={handleClose}>

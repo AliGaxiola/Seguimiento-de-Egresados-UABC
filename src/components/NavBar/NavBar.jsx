@@ -155,7 +155,7 @@ function NavBar() {
             Titulación
           </Link>
           <Link
-            href="/test"
+            href="/potenciales-egresar"
             underline="none"
             sx={{
               color: "white",

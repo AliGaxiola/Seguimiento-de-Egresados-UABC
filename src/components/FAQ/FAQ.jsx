@@ -15,6 +15,33 @@ const FAQ = ({ title, content }) => {
     setExpanded(isExpanded ? panel : false);
   };
 
+  // Render content with links
+  const renderContent = (content) => {
+    const linkRegex = /\[(.*?)\]\((.*?)\)/g;
+    let parts = [];
+    let lastIndex = 0;
+
+    content.replace(linkRegex, (match, linkText, linkUrl, index) => {
+      if (index > lastIndex) {
+        parts.push(content.substring(lastIndex, index));
+      }
+      lastIndex = index + match.length;
+
+      const isExternal = linkUrl.startsWith("http");
+      parts.push(
+        isExternal
+          ? `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">${linkText}</a>`
+          : `<a href="${linkUrl}" style="color: blue; text-decoration: underline;">${linkText}</a>`
+      );
+    });
+
+    if (lastIndex < content.length) {
+      parts.push(content.substring(lastIndex));
+    }
+
+    return parts.join("");
+  };
+
   return (
     <Box width="100%">
       <Accordion
@@ -40,7 +67,10 @@ const FAQ = ({ title, content }) => {
           <Typography>{title}</Typography>
         </AccordionSummary>
         <AccordionDetails style={{ backgroundColor: "white", color: "black" }}>
-          <Typography>{content}</Typography>
+          <Typography
+            component="div"
+            dangerouslySetInnerHTML={{ __html: renderContent(content) }}
+          />
         </AccordionDetails>
       </Accordion>
     </Box>
