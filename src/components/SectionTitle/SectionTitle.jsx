@@ -9,11 +9,12 @@ const SectionTitle = ({ text, boxSx, textSx }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        width: "fit-content",
+        width: "100%",
+        maxWidth: "80%",
         margin: "0 auto",
         position: "relative",
         my: 5,
-        ...boxSx // Aplicando estilos adicionales desde las props
+        ...boxSx, // Aplicando estilos adicionales desde las props
       }}
     >
       <Typography
@@ -22,7 +23,7 @@ const SectionTitle = ({ text, boxSx, textSx }) => {
         sx={{
           position: "relative",
           textAlign: "center",
-          color: "green",
+          color: "#00673D",
           "&::after": {
             content: '""',
             position: "absolute",
@@ -33,7 +34,7 @@ const SectionTitle = ({ text, boxSx, textSx }) => {
             height: "1px",
             backgroundColor: "rgba(0, 0, 0, 0.3)",
           },
-          ...textSx // Aplicando estilos adicionales desde las props
+          ...textSx, // Aplicando estilos adicionales desde las props
         }}
       >
         {text}

@@ -27,7 +27,11 @@ function GridTitulacion() {
             >
               ACTOS ACADÉMICOS
             </Typography> */}
-             <SectionTitle text="ACTOS ACADÉMICOS" textSx={{ fontSize: '50px', marginTop: 0}} boxSx={{my: 0, mb: 2}}/>
+            <SectionTitle
+              text="ACTOS ACADÉMICOS"
+              textSx={{ fontSize: "42px", marginTop: 0 }}
+              boxSx={{ my: 0, mb: 2 }}
+            />
           </Grid>
           <Grid
             item

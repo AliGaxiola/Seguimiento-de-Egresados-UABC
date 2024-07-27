@@ -6,7 +6,10 @@ import CardBox from "../../CardBox/CardBox";
 function PotencialesEgresar() {
   return (
     <>
-      <SectionTitle text="Potenciales a Egresar" />
+      <SectionTitle
+        text="Potenciales a Egresar"
+        textSx={{ fontSize: "42px" }}
+      />
 
       <Container maxWidth="xl" sx={{ marginBottom: 4 }}>
         {/* Generacion 2024-1 */}

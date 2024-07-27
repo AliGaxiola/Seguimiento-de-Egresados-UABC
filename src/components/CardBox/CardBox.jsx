@@ -46,7 +46,7 @@ function CardBox({ image, title, content }) {
                   gutterBottom
                   variant="h5"
                   component="div"
-                  sx={{ color: "green", textAlign: "center" }}
+                  sx={{ color: "#00673D", textAlign: "center" }}
                 >
                   {title}
                 </Typography>

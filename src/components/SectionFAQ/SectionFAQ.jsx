@@ -6,7 +6,10 @@ import { Container } from "@mui/material";
 function SectionFAQ() {
   return (
     <>
-      <SectionTitle text={"Preguntas Frecuentes"} />
+      <SectionTitle
+        text={"Preguntas Frecuentes"}
+        textSx={{ fontSize: "42px" }}
+      />
 
       <Container
         maxWidth="xl"

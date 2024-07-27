@@ -15,7 +15,7 @@ const NewsBox = ({ title, notice, date }) => {
         boxShadow: 3,
       }}
     >
-      <Box sx={{ backgroundColor: "#dd971a", padding: 2 }}>
+      <Box sx={{ backgroundColor: "#D3912A", padding: 2 }}>
         <Typography variant="h7" color="white">
           {title}
         </Typography>

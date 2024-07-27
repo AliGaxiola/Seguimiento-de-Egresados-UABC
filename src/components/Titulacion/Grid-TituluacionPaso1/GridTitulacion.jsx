@@ -17,7 +17,7 @@ function GridTitulacion() {
       <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
         <Grid container gap={2}>
           <Grid item xs={12}>
-{/*              <Typography
+            {/*              <Typography
               variant="h3"
               component="h2"
               sx={{
@@ -28,7 +28,11 @@ function GridTitulacion() {
             >
               TITULACIÓN
             </Typography>  */}
-            <SectionTitle text="TITULACIÓN" textSx={{ fontSize: '50px', marginTop: 0}} boxSx={{my: 0, mb: 2}}/>
+            <SectionTitle
+              text="TITULACIÓN"
+              textSx={{ fontSize: "42px", marginTop: 0 }}
+              boxSx={{ my: 0, mb: 2 }}
+            />
           </Grid>
           <Grid
             item
@@ -42,18 +46,18 @@ function GridTitulacion() {
                 textAlign: "center",
                 fontWeight: "bold",
                 marginBottom: 2,
-                mt: "30px"
+                mt: "30px",
               }}
             >
-              PASO 1 - CERTIFICADO DE ESTUDIOS PROFESIONALES
-              Y CERTIFICACIÓN DE PASANTE
+              PASO 1 - CERTIFICADO DE ESTUDIOS PROFESIONALES Y CERTIFICACIÓN DE
+              PASANTE
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               {/* <Boton
                 texto="Requisitos y procesos para la titulación, en sólo 3 pasos."
                 pdfUrl={pdfUrl}
               /> */}
-               <CuadroTexto texto="REQUISITOS Y PROCESOS PARA LA TITULACIÓN, EN SÓLO 3 PASOS." />
+              <CuadroTexto texto="REQUISITOS Y PROCESOS PARA LA TITULACIÓN, EN SÓLO 3 PASOS." />
             </Box>
             <Paso1A />
           </Grid>
@@ -85,8 +89,7 @@ function GridTitulacion() {
                 textAlign: "center",
                 fontWeight: "bold",
                 marginTop: 2,
-                fontStyle: 'italic'
-
+                fontStyle: "italic",
               }}
             >
               Importante: espera el correo de confirmación para pasar al paso 2.

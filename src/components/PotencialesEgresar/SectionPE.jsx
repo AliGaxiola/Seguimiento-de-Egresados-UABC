@@ -16,7 +16,10 @@ import CardBox from "../CardBox/CardBox";
 function SectionPE() {
   return (
     <>
-      <SectionTitle text={"Potenciales a Egresar"} />
+      <SectionTitle
+        text={"Potenciales a Egresar"}
+        textSx={{ fontSize: "42px" }}
+      />
 
       <Container maxWidth="xl" sx={{ mb: 8 }}>
         <Box sx={{ maxWidth: 800, mx: "auto", p: 2, mb: 8 }}>
@@ -26,7 +29,7 @@ function SectionPE() {
                 variant="h4"
                 component="h1"
                 gutterBottom
-                sx={{ textAlign: "center" }}
+                sx={{ textAlign: "center", color: "#D3912A" }}
               >
                 Ceremonia de Potenciales a Egresar
               </Typography>
@@ -49,7 +52,7 @@ function SectionPE() {
                         variant="h6"
                         component="h2"
                         gutterBottom
-                        sx={{ fontWeight: "bold" }}
+                        sx={{ fontWeight: "bold", color: "#D3912A" }}
                       >
                         Requisitos:
                       </Typography>

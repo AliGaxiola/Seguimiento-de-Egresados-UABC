@@ -58,7 +58,7 @@ const FAQ = ({ title, content }) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
           style={{
-            backgroundColor: "green",
+            backgroundColor: "#00673D",
             color: "white",
             minHeight: 60,
             margin: 0,

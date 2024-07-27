@@ -71,9 +71,9 @@ function NavBar() {
               component="h1"
               sx={{
                 marginBottom: 1,
-                fontSize: { xs: "1.5rem", md: "2.5rem" },
+                fontSize: { xs: "1.5rem", md: "2.7rem" },
                 fontWeight: "medium",
-                color: "green",
+                color: "#00673D",
               }}
             >
               Universidad Autónoma de Baja California
@@ -82,9 +82,9 @@ function NavBar() {
               variant="h2"
               component="h2"
               sx={{
-                fontSize: { xs: "1rem", md: "1.5rem" },
+                fontSize: { xs: "1rem", md: "1.7rem" },
                 fontWeight: "regular",
-                color: "green",
+                color: "#00673D",
               }}
             >
               Coordinación de Seguimiento a Egresados y Titulación
@@ -108,7 +108,7 @@ function NavBar() {
             flexWrap: "wrap",
             justifyContent: "space-around",
             gap: 2,
-            background: "green",
+            background: "#00673D",
             p: 2,
           }}
         >
@@ -119,8 +119,8 @@ function NavBar() {
               color: "white",
               flexBasis: "auto",
               "&:hover": {
-                bgcolor: "darkgreen",
-                color: "#dd971a",
+                //bgcolor: "darkgreen",
+                color: "#D3912A",
               },
             }}
           >
@@ -133,8 +133,8 @@ function NavBar() {
               color: "white",
               flexBasis: "auto",
               "&:hover": {
-                bgcolor: "darkgreen",
-                color: "#dd971a",
+                //bgcolor: "darkgreen",
+                color: "#D3912A",
               },
             }}
           >
@@ -147,8 +147,8 @@ function NavBar() {
               color: "white",
               flexBasis: "auto",
               "&:hover": {
-                bgcolor: "darkgreen",
-                color: "#dd971a",
+                //bgcolor: "darkgreen",
+                color: "#D3912A",
               },
             }}
           >
@@ -161,8 +161,8 @@ function NavBar() {
               color: "white",
               flexBasis: "auto",
               "&:hover": {
-                bgcolor: "darkgreen",
-                color: "#dd971a",
+                //bgcolor: "darkgreen",
+                color: "#D3912A",
               },
             }}
           >
@@ -176,8 +176,8 @@ function NavBar() {
               color: "white",
               flexBasis: "auto",
               "&:hover": {
-                bgcolor: "darkgreen",
-                color: "#dd971a",
+                //bgcolor: "darkgreen",
+                color: "#D3912A",
               },
             }}
           >
@@ -193,12 +193,12 @@ function NavBar() {
             }}
             PaperProps={{
               sx: {
-                bgcolor: "green",
+                bgcolor: "#00673D",
                 "& .MuiMenuItem-root": {
                   color: "white",
                   "&:hover": {
-                    bgcolor: "darkgreen",
-                    color: "#dd971a",
+                    //bgcolor: "darkgreen",
+                    color: "#D3912A",
                   },
                 },
                 marginTop: 1,
