@@ -7,7 +7,7 @@ const Footer = () => {
       component="footer"
       sx={{
         p: 10,
-        backgroundColor: "#dd971a",
+        backgroundColor: "#D3912A",
         display: "flex",
         color: "white",
         borderTop: "1px solid black",

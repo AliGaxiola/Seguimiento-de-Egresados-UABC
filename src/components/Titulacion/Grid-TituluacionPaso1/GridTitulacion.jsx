@@ -37,7 +37,7 @@ function GridTitulacion() {
           <Grid
             item
             xs={12}
-            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
           >
             <Typography
               variant="h4"
@@ -61,13 +61,13 @@ function GridTitulacion() {
             </Box>
             <Paso1A />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1B />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1C />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1D />
           </Grid>
         </Grid>
@@ -78,7 +78,7 @@ function GridTitulacion() {
           <Grid
             item
             xs={12}
-            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
           >
             <Etapa2Paso1A />
           </Grid>

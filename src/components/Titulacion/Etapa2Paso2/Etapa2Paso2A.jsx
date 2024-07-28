@@ -6,7 +6,7 @@ function Etapa2Paso2A() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{ border: "1px solid #ccc", p: 2, m: "0" }}>
+    <Box sx={{p: 2, m: "0" }}>
       <Typography variant="h6" sx={{ mb: 2, fontWeight: "bold", textAlign: "center" }}>
         ETAPA 2 (DEPARTAMENTO DE SERVICIOS ESTUDIANTILES Y GESTIÓN ESCOLAR)
       </Typography>

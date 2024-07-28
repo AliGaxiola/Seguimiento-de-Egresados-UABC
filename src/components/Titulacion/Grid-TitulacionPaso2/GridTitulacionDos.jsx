@@ -15,29 +15,29 @@ function GridTitulacionDos() {
           <Grid
             item
             xs={12}
-            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
           >
             <Typography
               variant="h4"
-              component="h4"
+              component="h2"
               sx={{
                 textAlign: "center",
                 fontWeight: "bold",
                 marginBottom: 2,
-                mt: "30px",
+                m: "30px",
               }}
             >
               PASO 2 - CONSTANCIA DE VERIFICACIÓN DE DOCUMENTOS PARA TITULACIÓN
             </Typography>
             <Paso2A />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1B />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso2C />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1D />
           </Grid>
         </Grid>
@@ -48,7 +48,7 @@ function GridTitulacionDos() {
           <Grid
             item
             xs={12}
-            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
           >
             <Etapa2Paso2A />
             

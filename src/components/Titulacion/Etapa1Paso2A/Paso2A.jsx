@@ -28,14 +28,14 @@ function Paso2A() {
           <Typography variant="body1" sx={{ mb: 2 }}>
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "green" }}
+              sx={{ fontWeight: "bold", color: "#00673D" }}
             >
               A. Enviar correo electrónico desde tu cuenta institucional a la siguiente dirección:
             </Typography>
             <br />
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "green" }}
+              sx={{ fontWeight: "bold", color: "#00673D" }}
             >
               vddtitulacion.dsegetji@uabc.edu.mx
             </Typography>

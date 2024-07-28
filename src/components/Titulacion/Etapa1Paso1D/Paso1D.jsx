@@ -17,7 +17,7 @@ function Paso1D() {
         >
           <Typography
             variant="body1"
-            sx={{ mb: 2, fontWeight: "bold", color: "green" }}
+            sx={{ mb: 2, fontWeight: "bold", color: "#00673D" }}
           >
             D. En el correo mencionar los siguientes datos:
           </Typography>

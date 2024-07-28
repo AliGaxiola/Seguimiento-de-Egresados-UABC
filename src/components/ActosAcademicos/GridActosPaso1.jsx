@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, Typography } from "@mui/material";
-import Paso1A from "../Titulacion/Etapa1Paso1A/Paso1A";
+import Paso1Actos from "./Paso1Actos";
 import Paso1B from "../Titulacion/Etapa1Paso1B/Paso1B";
 import Paso1C from "../Titulacion/Etapa1Paso1C/Paso1C";
 import Paso1D from "../Titulacion/Etapa1Paso1D/Paso1D";
@@ -9,6 +9,8 @@ import Etapa2Paso1A from "../Titulacion/Etapa2Paso1/Etapa2Paso1A";
 //import pdfUrl from "../../../src/pdfs/Paso 1 - Titulación-acto académico.pdf";
 import CuadroTexto from "../CuadroTexto/CuadroTexto";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import FlechaAtras from "../Flechas/FlechaAtras";
+
 
 function GridTitulacion() {
   return (
@@ -36,7 +38,7 @@ function GridTitulacion() {
           <Grid
             item
             xs={12}
-            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
           >
             <Typography
               variant="h4"
@@ -52,21 +54,17 @@ function GridTitulacion() {
               PASANTE
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              {/* <Boton
-                texto="Requisitos y procesos para actos académicos."
-                pdfUrl={pdfUrl}
-              /> */}
               <CuadroTexto texto="REQUISITOS Y PROCESOS PARA ACTOS ACADÉMICOS." />
             </Box>
-            <Paso1A />
+            <Paso1Actos />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1B />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1C />
           </Grid>
-          <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
             <Paso1D />
           </Grid>
         </Grid>
@@ -77,9 +75,15 @@ function GridTitulacion() {
           <Grid
             item
             xs={12}
-            sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
           >
             <Etapa2Paso1A />
+          </Grid>
+          <Grid sx={{display: 'flex', justifyContent: 'center', width: '100%'}}>
+            <FlechaAtras
+               textoIzquierda="Regresar a inicio"
+               rutaIzquierda="/"
+            />
           </Grid>
         </Grid>
       </Box>

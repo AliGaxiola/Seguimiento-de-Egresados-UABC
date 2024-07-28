@@ -5,6 +5,7 @@ import Paso3D from '../Paso3/Paso3D';
 import Paso3T from '../Paso3/Paso3T';
 import Flechas from '../../Flechas/Flechas';
 import Boton from '../../Boton.jsx/Boton';
+import pdf from '../../../pdfs/Pasos Titulación-GENERAL.pdf'
 
 function GridTitulacionTres() {
     return (
@@ -12,12 +13,12 @@ function GridTitulacionTres() {
           <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
             <Grid container gap={2}>
             <Grid sx={{width: '100%', display: 'flex', justifyContent: 'end'}}>
-                <Boton texto= "Descarga formato ahora"/>
+                <Boton texto= "Descarga pasos de titulacion general" pdfUrl={pdf}/>
             </Grid>
               <Grid
                 item
                 xs={12}
-                sx={{ border: "1px solid green", width: "auto", height: "auto" }}
+                sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
               >
                 <Typography
                   variant="h4"
@@ -34,10 +35,10 @@ function GridTitulacionTres() {
                 </Typography>
                 <Paso3U />
               </Grid>
-              <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+              <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
                 <Paso3D />
               </Grid>
-              <Grid item xs={12} sx={{ border: "1px solid green", height: "auto" }}>
+              <Grid item xs={12} sx={{ border: "1px solid #00673D", height: "auto" }}>
                 <Paso3T />
               </Grid>
               <Grid item xs={12} sx={{ width: "auto", height: "auto", mt: 2 }}>

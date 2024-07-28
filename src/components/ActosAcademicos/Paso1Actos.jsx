@@ -1,35 +1,35 @@
 import React from "react";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-import Boton from "../../Boton.jsx/Boton";
-import url from "../../../pdfs/AyB.pdf";
+import Boton from "../Boton.jsx/Boton";
+import pdf from '../../pdfs/Paso 1 - Titulación-acto académico.pdf'
 
-function Paso1A() {
+function Paso1Actos() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box sx={{ m: "0", p: 2 }}>
-      <Box
+    <Box sx={{m: '0', p: 2 }}>
+     <Box 
+      sx={{
+        display: 'flex', 
+        justifyContent: 'center',                           
+        p: 2
+      }}
+    >
+      <Typography
+        variant="h5"
+        component="h2"
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          p: 2,
-          ml: 40,
+          fontWeight: 'bold',
+          textAlign: 'center',
+          ml: 30,  
+          mr: 10,                                       
         }}
       >
-        <Typography
-          variant="h5"
-          component="h2"
-          sx={{
-            fontWeight: "bold",
-            textAlign: "center",
-            mr: 5,
-          }}
-        >
-          PASO 1: ETAPA 1 (ALUMNO)
-        </Typography>
-        <Boton texto="Descargar Formato A y B" pdfUrl={url} />
-      </Box>
+        PASO 1: ETAPA 1 (ALUMNO)
+      </Typography>
+      <Boton texto="Descargar Pasos" pdfUrl={pdf}/>
+    </Box>
       <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
         <Box sx={{ flex: 1, mr: isMobile ? 0 : 2, mb: isMobile ? 2 : 0 }}>
           <Typography variant="body1" sx={{ mb: 2 }}>
@@ -92,7 +92,10 @@ function Paso1A() {
             </Typography>{" "}
             Con saco y corbata no oscuros, sin lentes y accesorios.
           </Typography>
-          <Typography variant="body1" sx={{ fontWeight: "bold", mb: 2 }}>
+          <Typography
+            variant="body1"
+            sx={{ fontWeight: "bold", mb: 2 }}
+          >
             Tiempo máximo del trámite son 13 a 17 días hábiles
             <br />
             Horario: 8:30 a.m. a 1:30 p.m. y 3:30 p.m. a 6:00 p.m. Tel.
@@ -118,4 +121,4 @@ function Paso1A() {
   );
 }
 
-export default Paso1A;
+export default Paso1Actos;

@@ -17,7 +17,7 @@ function Paso1B() {
         >
           <Typography
             variant="body1"
-            sx={{ mb: 2, fontWeight: "bold", color: "green" }}
+            sx={{ mb: 2, fontWeight: "bold", color: "#00673D" }}
           >
             B. Adjuntar documentación requerida digitalizada con las siguientes
             características:
