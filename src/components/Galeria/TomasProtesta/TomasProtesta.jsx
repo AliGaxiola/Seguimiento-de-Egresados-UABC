@@ -6,7 +6,13 @@ import CardBox from "../../CardBox/CardBox";
 function TomasProtesta() {
   return (
     <>
-      <SectionTitle text="Tomas de Protesta" textSx={{ fontSize: "42px" }} />
+      <SectionTitle
+        text="Tomas de Protesta"
+        textSx={{
+          fontSize: { xs: "24px", sm: "32px", md: "42px" },
+          marginTop: 0,
+        }}
+      />
 
       <Container maxWidth="xl" sx={{ marginBottom: 4 }}>
         {/* Generacion 2024-1 */}

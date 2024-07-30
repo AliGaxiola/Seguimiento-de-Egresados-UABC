@@ -6,7 +6,13 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 function AvisosSection() {
   return (
     <>
-      <SectionTitle text={"Avisos"} textSx={{ fontSize: "42px" }} />
+      <SectionTitle
+        text={"Avisos"}
+        textSx={{
+          fontSize: { xs: "24px", sm: "32px", md: "42px" },
+          marginTop: 0,
+        }}
+      />
 
       <Container maxWidth="xl" sx={{ mb: 8 }}>
         <Box

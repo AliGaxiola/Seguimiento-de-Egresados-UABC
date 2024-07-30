@@ -8,7 +8,10 @@ function SectionFAQ() {
     <>
       <SectionTitle
         text={"Preguntas Frecuentes"}
-        textSx={{ fontSize: "42px" }}
+        textSx={{
+          fontSize: { xs: "24px", sm: "32px", md: "42px" },
+          marginTop: 0,
+        }}
       />
 
       <Container

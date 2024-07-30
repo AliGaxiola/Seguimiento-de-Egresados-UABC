@@ -8,7 +8,10 @@ function PotencialesEgresar() {
     <>
       <SectionTitle
         text="Potenciales a Egresar"
-        textSx={{ fontSize: "42px" }}
+        textSx={{
+          fontSize: { xs: "24px", sm: "32px", md: "42px" },
+          marginTop: 0,
+        }}
       />
 
       <Container maxWidth="xl" sx={{ marginBottom: 4 }}>

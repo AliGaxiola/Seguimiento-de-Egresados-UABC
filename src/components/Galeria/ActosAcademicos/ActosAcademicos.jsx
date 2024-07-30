@@ -6,7 +6,13 @@ import CardBox from "../../CardBox/CardBox";
 function ActosAcademicos() {
   return (
     <>
-      <SectionTitle text="Actos Académicos" textSx={{ fontSize: "42px" }} />
+      <SectionTitle
+        text="Actos Académicos"
+        textSx={{
+          fontSize: { xs: "24px", sm: "32px", md: "42px" },
+          marginTop: 0,
+        }}
+      />
 
       <Container maxWidth="xl" sx={{ marginBottom: 4 }}>
         {/* Generacion 2024-1 */}
