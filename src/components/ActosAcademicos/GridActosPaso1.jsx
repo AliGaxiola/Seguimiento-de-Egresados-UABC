@@ -8,7 +8,7 @@ import Etapa2Paso1A from "../Titulacion/Etapa2Paso1/Etapa2Paso1A";
 import CuadroTexto from "../CuadroTexto/CuadroTexto";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import FlechaAtras from "../Flechas/FlechaAtras";
-import pdf from '../../pdfs/Paso 1 - Titulación-acto académico.pdf'
+import pdf from '../../pdfs/FORMATO registro comité pro-graduación.pdf'
 import Boton from "../Boton.jsx/Boton";
 
 function GridTitulacion() {
@@ -23,7 +23,7 @@ function GridTitulacion() {
               boxSx={{ my: 0, mb: 2 }}
             />
             <Box sx={{ display: 'flex', width: '100%', justifyContent: 'end' }}>
-              <Boton texto="Descargar Pasos" pdfUrl={pdf} />
+              <Boton texto="Descargar formato registro comité pro-graduación" pdfUrl={pdf} />
             </Box>
           </Grid>
           <Grid

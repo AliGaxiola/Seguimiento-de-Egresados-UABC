@@ -3,16 +3,16 @@ import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 
 function Paso1B() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box sx={{ p: 2, m: "0" }}>
-      <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
+      <Box sx={{ display: "flex", flexDirection: isSmallScreen ? "column" : "row" }}>
         <Box
           sx={{
             flex: 1,
-            mr: isMobile ? 0 : 2,
-            mb: isMobile ? 2 : 0,
+            mr: isSmallScreen ? 0 : 2,
+            mb: isSmallScreen ? 2 : 0,
           }}
         >
           <Typography
@@ -32,20 +32,22 @@ function Paso1B() {
             Nota: La información deberá estar legible.
           </Typography>
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flex: isMobile ? 1 : 0.5,
-          }}
-        >
-          <img
-            src={process.env.PUBLIC_URL + "/assets/ArchvoAnimado.png"}
-            alt="Documento con marca de verificación"
-            style={{ maxWidth: "50%", maxHeight: isMobile ? "200px" : "70%" }}
-          />
-        </Box>
+        {!isSmallScreen && (
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flex: 0.5,
+            }}
+          >
+            <img
+              src={process.env.PUBLIC_URL + "/assets/ArchvoAnimado.png"}
+              alt="Documento con marca de verificación"
+              style={{ maxWidth: "50%", maxHeight: "70%" }}
+            />
+          </Box>
+        )}
       </Box>
     </Box>
   );

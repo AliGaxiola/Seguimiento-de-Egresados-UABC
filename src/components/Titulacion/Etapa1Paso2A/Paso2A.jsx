@@ -3,7 +3,7 @@ import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 
 function Paso2A() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Box sx={{ m: '0', p: 2 }}>
@@ -18,8 +18,8 @@ function Paso2A() {
       >
         ETAPA 1 (ALUMNO)
       </Typography>
-      <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
-        <Box sx={{ flex: 1, mr: isMobile ? 0 : 2, mb: isMobile ? 2 : 0 }}>
+      <Box sx={{ display: "flex", flexDirection: isSmallScreen ? "column" : "row" }}>
+        <Box sx={{ flex: 1, mr: isSmallScreen ? 0 : 2, mb: isSmallScreen ? 2 : 0 }}>
           <Typography variant="body1" sx={{ mb: 2 }}>
             Departamento de Servicios Estudiantiles y Gestión Escolar
             <br />
@@ -67,20 +67,22 @@ function Paso2A() {
             7. Constancia de acreditación de lengua extranjera. Egresados 2006-2 en adelante.
           </Typography>
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flex: isMobile ? 1 : 0.5,
-          }}
-        >
-          <img
-            src={process.env.PUBLIC_URL + "/assets/CimarronAnimado.png"}
-            alt="Cimarron-Animado"
-            style={{ maxWidth: "100%", maxHeight: isMobile ? "200px" : "70%" }}
-          />
-        </Box>
+        {!isSmallScreen && (
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flex: 0.5,
+            }}
+          >
+            <img
+              src={process.env.PUBLIC_URL + "/assets/CimarronAnimado.png"}
+              alt="Cimarron-Animado"
+              style={{ maxWidth: "100%", maxHeight: "70%" }}
+            />
+          </Box>
+        )}
       </Box>
     </Box>
   );
