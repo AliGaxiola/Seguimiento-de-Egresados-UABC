@@ -9,13 +9,32 @@ function FlechaAtras({ textoIzquierda, textoInferior, rutaIzquierda }) {
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 2 }}>
         <Link to={rutaIzquierda} style={{ textDecoration: 'none', color: 'inherit' }}>
           <IconButton color="primary" size="large">
-            <ArrowBackIcon sx={{ fontSize: 40 }} />
+            <ArrowBackIcon sx={{ fontSize: { xs: 30, sm: 35, md: 40 } }} />
           </IconButton>
         </Link>
-        <Typography variant="h6" sx={{ fontWeight: 'bold', mt: 1, textAlign: 'center' }}>{textoIzquierda}</Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: 'bold',
+            mt: 1,
+            textAlign: 'center',
+            fontSize: { xs: '14px', sm: '16px', md: '18px' }
+          }}
+        >
+          {textoIzquierda}
+        </Typography>
       </Box>
       {textoInferior && (
-        <Typography variant="body1" sx={{ fontStyle: 'italic', fontWeight: 'bold', textAlign: 'center', width: '100%' }}>
+        <Typography
+          variant="body1"
+          sx={{
+            fontStyle: 'italic',
+            fontWeight: 'bold',
+            textAlign: 'center',
+            width: '100%',
+            fontSize: { xs: '12px', sm: '14px', md: '16px' }
+          }}
+        >
           {textoInferior}
         </Typography>
       )}

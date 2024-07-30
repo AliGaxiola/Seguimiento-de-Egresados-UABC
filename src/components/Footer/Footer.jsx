@@ -6,16 +6,19 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        p: 10,
+        p: { xs: 2, sm: 5, md: 10 },
         backgroundColor: "#D3912A",
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         color: "white",
         borderTop: "1px solid black",
         justifyContent: "space-around",
-        marginTop: "120px"
+        alignItems: { xs: "center", md: "flex-start" },
+        marginTop: { xs: 5, md: "120px" },
+        textAlign: { xs: "center", md: "left" },
       }}
     >
-      <Box sx={{ mb: 1 }}>
+      <Box sx={{ mb: { xs: 2, md: 1 } }}>
         <Typography variant="body1">
           <Typography variant="h6" sx={{ fontWeight: "bold" }}>
             FTYM
@@ -23,8 +26,7 @@ const Footer = () => {
           <br />
           Facultad de Turismo y Mercadotecnia
           <br />
-          Universidad 14418, UABC, Parque Internacional Industrial Tijuana,
-          22390
+          Universidad 14418, UABC, Parque Internacional Industrial Tijuana, 22390
           <br />
           Tijuana, B.C.
           <br />
@@ -37,7 +39,7 @@ const Footer = () => {
           Enlaces de interés
         </Typography>
         <List>
-          <ListItem sx={{p: '0'}}>
+          <ListItem sx={{ p: 0 }}>
             <Link
               href="http://ftm.tij.uabc.mx/"
               target="_blank"
@@ -48,8 +50,7 @@ const Footer = () => {
               Facultad de Turismo y Mercadotecnia
             </Link>
           </ListItem>
-          <br />
-          <ListItem sx={{p: '0'}}>
+          <ListItem sx={{ p: 0 }}>
             <Link
               href="http://www.bolsadetrabajo.uabc.mx/vacantes/empleos/inicio/"
               target="_blank"

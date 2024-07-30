@@ -1,7 +1,5 @@
 import React from "react";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-import Boton from "../../Boton.jsx/Boton";
-import url from "../../../pdfs/AyB.pdf";
 
 function Paso1A() {
   const theme = useTheme();
@@ -9,27 +7,17 @@ function Paso1A() {
 
   return (
     <Box sx={{ m: "0", p: 2 }}>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          p: 2,
-          ml: 40,
-        }}
-      >
         <Typography
           variant="h5"
           component="h2"
           sx={{
             fontWeight: "bold",
             textAlign: "center",
-            mr: 5,
+            mb: 5
           }}
         >
           PASO 1: ETAPA 1 (ALUMNO)
         </Typography>
-        <Boton texto="Descargar Formato A y B" pdfUrl={url} />
-      </Box>
       <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
         <Box sx={{ flex: 1, mr: isMobile ? 0 : 2, mb: isMobile ? 2 : 0 }}>
           <Typography variant="body1" sx={{ mb: 2 }}>

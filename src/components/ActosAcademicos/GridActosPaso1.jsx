@@ -5,35 +5,26 @@ import Paso1B from "../Titulacion/Etapa1Paso1B/Paso1B";
 import Paso1C from "../Titulacion/Etapa1Paso1C/Paso1C";
 import Paso1D from "../Titulacion/Etapa1Paso1D/Paso1D";
 import Etapa2Paso1A from "../Titulacion/Etapa2Paso1/Etapa2Paso1A";
-//import Boton from "../Boton.jsx/Boton";
-//import pdfUrl from "../../../src/pdfs/Paso 1 - Titulación-acto académico.pdf";
 import CuadroTexto from "../CuadroTexto/CuadroTexto";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import FlechaAtras from "../Flechas/FlechaAtras";
-
+import pdf from '../../pdfs/Paso 1 - Titulación-acto académico.pdf'
+import Boton from "../Boton.jsx/Boton";
 
 function GridTitulacion() {
   return (
     <>
-      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
+      <Box sx={{ flexGrow: 1, px: { xs: 2, sm: 5, md: 10, lg: 15 }, py: 2, mt: 5 }}>
         <Grid container justifyContent="center" gap={2}>
           <Grid item xs={12}>
-            {/* <Typography
-              variant="h3"
-              component="h2"
-              sx={{
-                textAlign: "center",
-                fontWeight: "bold",
-                marginBottom: 2,
-              }}
-            >
-              ACTOS ACADÉMICOS
-            </Typography> */}
             <SectionTitle
               text="ACTOS ACADÉMICOS"
-              textSx={{ fontSize: "42px", marginTop: 0 }}
+              textSx={{ fontSize: { xs: "24px", sm: "32px", md: "42px" }, marginTop: 0 }}
               boxSx={{ my: 0, mb: 2 }}
             />
+            <Box sx={{ display: 'flex', width: '100%', justifyContent: 'end' }}>
+              <Boton texto="Descargar Pasos" pdfUrl={pdf} />
+            </Box>
           </Grid>
           <Grid
             item
@@ -48,6 +39,7 @@ function GridTitulacion() {
                 fontWeight: "bold",
                 marginBottom: 2,
                 mt: "30px",
+                fontSize: { xs: "20px", sm: "24px", md: "28px" },
               }}
             >
               PASO 1 - CERTIFICADO DE ESTUDIOS PROFESIONALES Y CERTIFICACIÓN DE
@@ -70,7 +62,7 @@ function GridTitulacion() {
         </Grid>
       </Box>
 
-      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: "10px" }}>
+      <Box sx={{ flexGrow: 1, px: { xs: 2, sm: 5, md: 10, lg: 15 }, py: 2, mt: "10px" }}>
         <Grid container gap={2}>
           <Grid
             item
@@ -79,10 +71,10 @@ function GridTitulacion() {
           >
             <Etapa2Paso1A />
           </Grid>
-          <Grid sx={{display: 'flex', justifyContent: 'center', width: '100%'}}>
+          <Grid sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
             <FlechaAtras
-               textoIzquierda="Regresar a inicio"
-               rutaIzquierda="/"
+              textoIzquierda="Regresar a inicio"
+              rutaIzquierda="/"
             />
           </Grid>
         </Grid>

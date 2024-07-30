@@ -10,13 +10,9 @@ import Flechas from "../../Flechas/Flechas";
 function GridTitulacionDos() {
   return (
     <>
-      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: 5 }}>
+      <Box sx={{ flexGrow: 1, px: { xs: 2, sm: 5, md: 10, lg: 15 }, py: 2, mt: 5 }}>
         <Grid container gap={2}>
-          <Grid
-            item
-            xs={12}
-            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
-          >
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}>
             <Typography
               variant="h4"
               component="h2"
@@ -25,6 +21,7 @@ function GridTitulacionDos() {
                 fontWeight: "bold",
                 marginBottom: 2,
                 m: "30px",
+                fontSize: { xs: "20px", sm: "24px", md: "28px" },
               }}
             >
               PASO 2 - CONSTANCIA DE VERIFICACIÓN DE DOCUMENTOS PARA TITULACIÓN
@@ -43,25 +40,19 @@ function GridTitulacionDos() {
         </Grid>
       </Box>
 
-      <Box sx={{ flexGrow: 1, px: { xs: 15, md: 30 }, padding: 2, mt: "10px" }}>
+      <Box sx={{ flexGrow: 1, px: { xs: 2, sm: 5, md: 10, lg: 15 }, py: 2, mt: "10px" }}>
         <Grid container gap={2}>
-          <Grid
-            item
-            xs={12}
-            sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}
-          >
+          <Grid item xs={12} sx={{ border: "1px solid #00673D", width: "auto", height: "auto" }}>
             <Etapa2Paso2A />
-            
           </Grid>
           <Grid item xs={12} sx={{ width: "auto", height: "auto" }}>
-          <Typography
+            <Typography
               variant="body1"
               sx={{
                 textAlign: "center",
                 fontWeight: "bold",
                 marginTop: 2,
                 fontStyle: 'italic'
-
               }}
             >
               Importante: espera el correo de confirmación para pasar al paso 3.
