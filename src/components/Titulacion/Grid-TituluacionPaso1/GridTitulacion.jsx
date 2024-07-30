@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Typography } from "@mui/material";
+import { Grid, Box, Typography,useMediaQuery,useTheme } from "@mui/material";
 import Paso1A from "../Etapa1Paso1A/Paso1A";
 import Paso1B from "../Etapa1Paso1B/Paso1B";
 import Paso1C from "../Etapa1Paso1C/Paso1C";
@@ -11,6 +11,9 @@ import Boton from "../../Boton.jsx/Boton";
 import url from "../../../pdfs/AyB.pdf";
 
 function GridTitulacion() {
+  const theme = useTheme();
+     const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+     
   return (
     <>
       <Box
@@ -26,8 +29,19 @@ function GridTitulacion() {
               }}
               boxSx={{ my: 0, mb: 2 }}
             />
-            <Box sx={{ display: "flex", justifyContent: "end", width: "100%" }}>
-              <Boton texto="Descargar Formato A y B" pdfUrl={url} />
+             <Box sx={{ 
+              display: "flex", 
+              width: "100%", 
+              justifyContent: isSmallScreen ? "center" : "flex-end" 
+            }}>
+              <Boton
+                texto="Descargar formato A y B"
+                pdfUrl={url}
+                sx={{ 
+                  fontSize: isSmallScreen ? "0.8rem" : "1rem",
+                  padding: isSmallScreen ? "8px 16px" : "10px 20px",
+                }}
+              />
             </Box>
           </Grid>
           <Grid

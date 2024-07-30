@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Typography } from "@mui/material";
+import { Grid, Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Paso1Actos from "./Paso1Actos";
 import Paso1B from "../Titulacion/Etapa1Paso1B/Paso1B";
 import Paso1C from "../Titulacion/Etapa1Paso1C/Paso1C";
@@ -12,6 +12,9 @@ import pdf from "../../pdfs/FORMATO registro comité pro-graduación.pdf";
 import Boton from "../Boton.jsx/Boton";
 
 function GridTitulacion() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <>
       <Box
@@ -27,10 +30,18 @@ function GridTitulacion() {
               }}
               boxSx={{ my: 0, mb: 2 }}
             />
-            <Box sx={{ display: "flex", width: "100%", justifyContent: "end" }}>
+            <Box sx={{ 
+              display: "flex", 
+              width: "100%", 
+              justifyContent: isSmallScreen ? "center" : "flex-end" 
+            }}>
               <Boton
                 texto="Descargar formato registro comité pro-graduación"
                 pdfUrl={pdf}
+                sx={{ 
+                  fontSize: isSmallScreen ? "0.8rem" : "1rem",
+                  padding: isSmallScreen ? "8px 16px" : "10px 20px",
+                }}
               />
             </Box>
           </Grid>
@@ -54,7 +65,10 @@ function GridTitulacion() {
               PASANTE
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <CuadroTexto texto="REQUISITOS Y PROCESOS PARA ACTOS ACADÉMICOS." />
+              <CuadroTexto 
+                texto="REQUISITOS Y PROCESOS PARA ACTOS ACADÉMICOS." 
+                isSmallScreen={isSmallScreen}
+              />
             </Box>
             <Paso1Actos />
           </Grid>

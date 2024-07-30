@@ -4,6 +4,7 @@ import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 function Paso1A() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+  
 
   return (
     <Box sx={{ m: "0", p: 2 }}>
