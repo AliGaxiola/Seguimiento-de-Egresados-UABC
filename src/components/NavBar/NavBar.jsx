@@ -61,10 +61,14 @@ function NavBar() {
             sx={{
               flexGrow: 1,
               textAlign: "center",
-              px: { xs: 2, md: 4 },
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignContent: "center",
+              px: { xs: 2, sm: 3, md: 4, lg: 5 },
               maxHeight: "100%",
-              mr: { xs: 2, md: 3 },
-              mb: { xs: 2, md: 0 },
+              mr: { xs: 2, sm: 3, md: 4, lg: 5 },
+              mb: { xs: 2, sm: 3, md: 0 },
             }}
           >
             <Typography
@@ -72,7 +76,12 @@ function NavBar() {
               component="h1"
               sx={{
                 marginBottom: 1,
-                fontSize: { xs: "1.5rem", md: "2.7rem" },
+                fontSize: {
+                  xs: "1.5rem",
+                  sm: "1.8rem",
+                  md: "1.8rem",
+                  lg: "2.5rem",
+                },
                 fontWeight: "medium",
                 color: "#00673D",
               }}
@@ -83,7 +92,12 @@ function NavBar() {
               variant="h2"
               component="h2"
               sx={{
-                fontSize: { xs: "1rem", md: "1.7rem" },
+                fontSize: {
+                  xs: "1rem",
+                  sm: "1.2rem",
+                  md: "1.3rem",
+                  lg: "1.7rem",
+                },
                 fontWeight: "regular",
                 color: "#00673D",
               }}
@@ -97,7 +111,7 @@ function NavBar() {
             sx={{
               flexShrink: 0,
               width: "250px",
-              display: { xs: "none", md: "block" },
+              display: { xs: "none", sm: "none", md: "block" },
             }}
           />
         </Box>
