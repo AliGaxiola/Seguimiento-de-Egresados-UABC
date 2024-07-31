@@ -64,6 +64,7 @@ function NavBar() {
               px: { xs: 2, md: 4 },
               maxHeight: "100%",
               mr: { xs: 2, md: 3 },
+              mb: { xs: 2, md: 0 },
             }}
           >
             <Typography
