@@ -18,7 +18,9 @@ const Footer = () => {
         textAlign: { xs: "center", md: "left" },
       }}
     >
-      <Box sx={{ mb: { xs: 2, md: 1 }, textAlign: { xs: "center", md: "left" } }}>
+      <Box
+        sx={{ mb: { xs: 2, md: 1 }, textAlign: { xs: "center", md: "left" } }}
+      >
         <Typography variant="body1">
           <Typography variant="h6" sx={{ fontWeight: "bold" }}>
             FTYM
@@ -26,7 +28,8 @@ const Footer = () => {
           <br />
           Facultad de Turismo y Mercadotecnia
           <br />
-          Universidad 14418, UABC, Parque Internacional Industrial Tijuana, 22390
+          Universidad 14418, UABC, Parque Internacional Industrial Tijuana,
+          22390
           <br />
           Tijuana, B.C.
           <br />
@@ -34,12 +37,31 @@ const Footer = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ textAlign: { xs: "center", md: "left" }, width: { xs: '100%', md: 'auto' } }}>
+      <Box
+        sx={{
+          textAlign: { xs: "center", md: "left" },
+          width: { xs: "100%", md: "auto" },
+        }}
+      >
         <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold" }}>
           Enlaces de interés
         </Typography>
-        <List sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <ListItem sx={{ p: 0, justifyContent: 'center' }}>
+        <List
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: { xs: "center", md: "flex-start" },
+            justifyContent: { xs: "center", md: "flex-start" },
+            width: "100%",
+          }}
+        >
+          <ListItem
+            sx={{
+              p: 0,
+              justifyContent: { xs: "center", md: "flex-start" },
+              width: "100%",
+            }}
+          >
             <Link
               href="http://ftm.tij.uabc.mx/"
               target="_blank"
@@ -50,7 +72,13 @@ const Footer = () => {
               Facultad de Turismo y Mercadotecnia
             </Link>
           </ListItem>
-          <ListItem sx={{ p: 0, justifyContent: 'center' }}>
+          <ListItem
+            sx={{
+              p: 0,
+              justifyContent: { xs: "center", md: "flex-start" },
+              width: "100%",
+            }}
+          >
             <Link
               href="http://www.bolsadetrabajo.uabc.mx/vacantes/empleos/inicio/"
               target="_blank"
