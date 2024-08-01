@@ -18,7 +18,7 @@ const Footer = () => {
         textAlign: { xs: "center", md: "left" },
       }}
     >
-      <Box sx={{ mb: { xs: 2, md: 1 } }}>
+      <Box sx={{ mb: { xs: 2, md: 1 }, textAlign: { xs: "center", md: "left" } }}>
         <Typography variant="body1">
           <Typography variant="h6" sx={{ fontWeight: "bold" }}>
             FTYM
@@ -34,12 +34,12 @@ const Footer = () => {
         </Typography>
       </Box>
 
-      <Box>
+      <Box sx={{ textAlign: { xs: "center", md: "left" }, width: { xs: '100%', md: 'auto' } }}>
         <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold" }}>
           Enlaces de interés
         </Typography>
-        <List>
-          <ListItem sx={{ p: 0 }}>
+        <List sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <ListItem sx={{ p: 0, justifyContent: 'center' }}>
             <Link
               href="http://ftm.tij.uabc.mx/"
               target="_blank"
@@ -50,7 +50,7 @@ const Footer = () => {
               Facultad de Turismo y Mercadotecnia
             </Link>
           </ListItem>
-          <ListItem sx={{ p: 0 }}>
+          <ListItem sx={{ p: 0, justifyContent: 'center' }}>
             <Link
               href="http://www.bolsadetrabajo.uabc.mx/vacantes/empleos/inicio/"
               target="_blank"
