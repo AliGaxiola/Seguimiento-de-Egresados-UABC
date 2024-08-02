@@ -44,7 +44,7 @@ function SectionFAQ() {
         />
         <FAQ
           title="En donde entrego los documentos del paso 3 de titulación"
-          content="En el cubículo 2 de la FTYM, dejarlos en el buzón ([enlace del paso 3](/pasos-titulacion)) horario de lunes a viernes de 7:00 am a 9:00 pm."
+          content="En el cubículo 2 de la FTYM, dejarlos en el buzón ([enlace del paso 3](/paso-tres-titulacion)) horario de lunes a viernes de 7:00 am a 9:00 pm."
         />
         <FAQ
           title="Tengo dudas del proceso de titulación deseo agendar cita"
