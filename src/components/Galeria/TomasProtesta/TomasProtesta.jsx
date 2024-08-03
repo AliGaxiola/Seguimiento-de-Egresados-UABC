@@ -43,7 +43,11 @@ function TomasProtesta() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox image="/assets/FotosGaleria/TP_2024-1-1.jpeg" />
+            <CardBox
+              image={
+                process.env.PUBLIC_URL + "/assets/FotosGaleria/TP_2024-1-1.jpeg"
+              }
+            />
           </Grid>
           <Grid
             item
@@ -53,7 +57,11 @@ function TomasProtesta() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox image="/assets/FotosGaleria/TP_2024-1-2.jpeg" />
+            <CardBox
+              image={
+                process.env.PUBLIC_URL + "/assets/FotosGaleria/TP_2024-1-2.jpeg"
+              }
+            />
           </Grid>
         </Grid>
 
@@ -86,7 +94,11 @@ function TomasProtesta() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox image="/assets/FotosGaleria/TP_2023-2-1.jpeg" />
+            <CardBox
+              image={
+                process.env.PUBLIC_URL + "/assets/FotosGaleria/TP_2023-2-1.jpeg"
+              }
+            />
           </Grid>
           <Grid
             item
@@ -96,7 +108,11 @@ function TomasProtesta() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox image="/assets/FotosGaleria/TP_2023-2-2.jpeg" />
+            <CardBox
+              image={
+                process.env.PUBLIC_URL + "/assets/FotosGaleria/TP_2023-2-2.jpeg"
+              }
+            />
           </Grid>
         </Grid>
       </Container>

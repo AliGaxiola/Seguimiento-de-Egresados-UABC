@@ -14,7 +14,7 @@ const HeroInicio = () => {
       }}
     >
       <img
-        src="/assets/foto-hero-calidad.jpeg"
+        src={process.env.PUBLIC_URL + "/assets/foto-hero-calidad.jpeg"}
         alt="Background"
         style={{
           width: "100%",

@@ -85,7 +85,11 @@ function SectionPE() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox image="/assets/FotosGaleria/PE_2024-1.jpeg" />
+            <CardBox
+              image={
+                process.env.PUBLIC_URL + "/assets/FotosGaleria/PE_2024-1.jpeg"
+              }
+            />
           </Grid>
           <Grid
             item
@@ -95,7 +99,11 @@ function SectionPE() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox image="/assets/FotosGaleria/PE_2023-2.jpeg" />
+            <CardBox
+              image={
+                process.env.PUBLIC_URL + "/assets/FotosGaleria/PE_2023-2.jpeg"
+              }
+            />
           </Grid>
           <Grid
             item
@@ -105,7 +113,11 @@ function SectionPE() {
             display="flex"
             justifyContent="center"
           >
-            <CardBox image="/assets/FotosGaleria/PE_2023-1.jpeg" />
+            <CardBox
+              image={
+                process.env.PUBLIC_URL + "/assets/FotosGaleria/PE_2023-1.jpeg"
+              }
+            />
           </Grid>
         </Grid>
       </Container>

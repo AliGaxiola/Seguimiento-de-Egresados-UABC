@@ -44,7 +44,10 @@ function ActosAcademicos() {
             justifyContent="center"
           >
             <CardBox
-              image="/assets/FotosGaleria/AA_GT_2024-1.jpeg"
+              image={
+                process.env.PUBLIC_URL +
+                "/assets/FotosGaleria/AA_GT_2024-1.jpeg"
+              }
               title="Gestión Turística"
             />
           </Grid>
@@ -57,7 +60,10 @@ function ActosAcademicos() {
             justifyContent="center"
           >
             <CardBox
-              image="/assets/FotosGaleria/AA_M_2024-1-1.jpeg"
+              image={
+                process.env.PUBLIC_URL +
+                "/assets/FotosGaleria/AA_M_2024-1-1.jpeg"
+              }
               title="Mercadotecnia"
             />
           </Grid>
@@ -70,7 +76,10 @@ function ActosAcademicos() {
             justifyContent="center"
           >
             <CardBox
-              image="/assets/FotosGaleria/AA_M_2024-1-2.jpeg"
+              image={
+                process.env.PUBLIC_URL +
+                "/assets/FotosGaleria/AA_M_2024-1-2.jpeg"
+              }
               title="Mercadotecnia"
             />
           </Grid>

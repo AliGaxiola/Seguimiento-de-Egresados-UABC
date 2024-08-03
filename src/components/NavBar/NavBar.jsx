@@ -49,7 +49,9 @@ function NavBar() {
           >
             <img
               src={
-                isSmallScreen ? "/assets/Logo_chico.png" : "/assets/Logo.png"
+                isSmallScreen
+                  ? process.env.PUBLIC_URL + "/assets/Logo_chico.png"
+                  : process.env.PUBLIC_URL + "/assets/Logo.png"
               } // Cambiar imagen en pantallas pequeñas
               alt="UABC Logo"
               style={{ height: "auto", width: "100%" }}
@@ -128,7 +130,8 @@ function NavBar() {
           }}
         >
           <Link
-            href="/Seguimiento-de-Egresados-UABC"
+            component={RouterLink}
+            to="/Seguimiento-de-Egresados-UABC"
             underline="none"
             sx={{
               color: "white",
@@ -142,7 +145,8 @@ function NavBar() {
             Inicio
           </Link>
           <Link
-            href="/actos-academicos"
+            component={RouterLink}
+            to="/actos-academicos"
             underline="none"
             sx={{
               color: "white",
@@ -156,7 +160,8 @@ function NavBar() {
             Actos Académicos
           </Link>
           <Link
-            href="/pasos-titulacion"
+            component={RouterLink}
+            to="/pasos-titulacion"
             underline="none"
             sx={{
               color: "white",
@@ -170,7 +175,8 @@ function NavBar() {
             Titulación
           </Link>
           <Link
-            href="/potenciales-egresar"
+            component={RouterLink}
+            to="/potenciales-egresar"
             underline="none"
             sx={{
               color: "white",
