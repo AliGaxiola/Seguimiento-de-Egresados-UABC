@@ -30,15 +30,17 @@ function GridTitulacion() {
               }}
               boxSx={{ my: 0, mb: 2 }}
             />
-            <Box sx={{ 
-              display: "flex", 
-              width: "100%", 
-              justifyContent: isSmallScreen ? "center" : "flex-end" 
-            }}>
+            <Box
+              sx={{
+                display: "flex",
+                width: "100%",
+                justifyContent: isSmallScreen ? "center" : "flex-end",
+              }}
+            >
               <Boton
                 texto="Descargar formato registro comité pro-graduación"
                 pdfUrl={pdf}
-                sx={{ 
+                sx={{
                   fontSize: isSmallScreen ? "0.8rem" : "1rem",
                   padding: isSmallScreen ? "8px 16px" : "10px 20px",
                 }}
@@ -65,8 +67,8 @@ function GridTitulacion() {
               PASANTE
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <CuadroTexto 
-                texto="REQUISITOS Y PROCESOS PARA ACTOS ACADÉMICOS." 
+              <CuadroTexto
+                texto="REQUISITOS Y PROCESOS PARA ACTOS ACADÉMICOS."
                 isSmallScreen={isSmallScreen}
               />
             </Box>
@@ -115,7 +117,10 @@ function GridTitulacion() {
           <Grid
             sx={{ display: "flex", justifyContent: "center", width: "100%" }}
           >
-            <FlechaAtras textoIzquierda="Regresar a inicio" rutaIzquierda="/" />
+            <FlechaAtras
+              textoIzquierda="Regresar a inicio"
+              rutaIzquierda="/Seguimiento-de-Egresados-UABC"
+            />
           </Grid>
         </Grid>
       </Box>
