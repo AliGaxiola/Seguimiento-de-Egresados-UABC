@@ -14,7 +14,7 @@ import PotencialesEgresar from "./pages/PotencialesEgresar";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Seguimiento-de-Egresados-UABC",
     element: <Inicio />,
   },
   {

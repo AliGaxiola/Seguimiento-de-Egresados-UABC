@@ -128,7 +128,7 @@ function NavBar() {
           }}
         >
           <Link
-            href="/"
+            href="/Seguimiento-de-Egresados-UABC"
             underline="none"
             sx={{
               color: "white",
