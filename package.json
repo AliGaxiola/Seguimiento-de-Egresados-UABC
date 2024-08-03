@@ -1,5 +1,4 @@
 {
-  "homepage": "https://AliGaxiola.github.io/Seguimiento-de-Egresados-UABC",
   "name": "seguimiento-egresados",
   "version": "0.1.0",
   "private": true,
@@ -46,5 +45,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "homepage": "https://AliGaxiola.github.io/Seguimiento-de-Egresados-UABC"
 }
