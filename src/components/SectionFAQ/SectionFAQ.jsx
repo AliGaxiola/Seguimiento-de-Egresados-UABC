@@ -68,7 +68,7 @@ function SectionFAQ() {
         />
         <FAQ
           title="No tengo liberado el inglés, ¿en donde presento el examen de inglés?"
-          content="Revisar las fechas de examen de inglés para egreso en la página de idiomas <a href='https://idiomas.uabc.mx/' target='_blank' rel='noopener noreferrer'>https://idiomas.uabc.mx/.<a/>"
+          content="Revisar las fechas de examen de inglés para egreso en la página de idiomas <a href='https://idiomas.uabc.mx/' target='_blank' rel='noopener noreferrer'>https://idiomas.uabc.mx/.</a>"
         />
         <FAQ
           title="Qué necesito para poder participar en un acto académico?"
