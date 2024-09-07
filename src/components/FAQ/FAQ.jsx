@@ -9,6 +9,29 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link as RouterLink } from "react-router-dom";
 
+// Componente para renderizar enlaces internos y externos
+const LinkRenderer = ({ linkText, linkUrl }) => {
+  const isExternal = linkUrl.startsWith("http");
+
+  return isExternal ? (
+    <a
+      href={linkUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: "blue", textDecoration: "underline" }}
+    >
+      {linkText}
+    </a>
+  ) : (
+    <RouterLink
+      to={linkUrl}
+      style={{ color: "blue", textDecoration: "underline" }}
+    >
+      {linkText}
+    </RouterLink>
+  );
+};
+
 const FAQ = ({ title, content }) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -16,92 +39,32 @@ const FAQ = ({ title, content }) => {
     setExpanded(isExpanded ? panel : false);
   };
 
-  // Función para detectar etiquetas <a> en el contenido
-  const containsAnchorTag = (content) => {
-    return /<a\s+[^>]*>(.*?)<\/a>/.test(content);
-  };
-
-  // Render content with links as HTML
-  const renderContentAsHTML = (content) => {
+  const renderContentWithLinks = (content) => {
+    // Usamos una expresión regular para buscar enlaces en formato [texto](url)
     const linkRegex = /\[(.*?)\]\((.*?)\)/g;
-    let parts = [];
+    const parts = [];
     let lastIndex = 0;
 
+    // Reemplazamos los enlaces encontrados en el texto
     content.replace(linkRegex, (match, linkText, linkUrl, index) => {
+      // Añadimos la parte del texto antes del enlace
       if (index > lastIndex) {
         parts.push(content.substring(lastIndex, index));
       }
       lastIndex = index + match.length;
 
-      const isExternal = linkUrl.startsWith("http");
+      // Renderizamos el enlace usando LinkRenderer
       parts.push(
-        isExternal
-          ? `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">${linkText}</a>`
-          : `<a href="${linkUrl}" style="color: blue; text-decoration: underline;">${linkText}</a>`
+        <LinkRenderer key={index} linkText={linkText} linkUrl={linkUrl} />
       );
     });
 
-    if (lastIndex < content.length) {
-      parts.push(content.substring(lastIndex));
-    }
-
-    return parts.join("");
-  };
-
-  // Render content with links as React components
-  const renderContentAsReact = (content) => {
-    const linkRegex = /\[(.*?)\]\((.*?)\)/g;
-    let parts = [];
-    let lastIndex = 0;
-
-    content.replace(linkRegex, (match, linkText, linkUrl, index) => {
-      if (index > lastIndex) {
-        parts.push(content.substring(lastIndex, index));
-      }
-      lastIndex = index + match.length;
-
-      const isExternal = linkUrl.startsWith("http");
-      parts.push(
-        <React.Fragment key={index}>
-          {isExternal ? (
-            <a
-              href={linkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "blue", textDecoration: "underline" }}
-            >
-              {linkText}
-            </a>
-          ) : (
-            <RouterLink
-              to={linkUrl}
-              style={{ color: "blue", textDecoration: "underline" }}
-            >
-              {linkText}
-            </RouterLink>
-          )}
-        </React.Fragment>
-      );
-    });
-
+    // Añadimos cualquier texto restante después del último enlace
     if (lastIndex < content.length) {
       parts.push(content.substring(lastIndex));
     }
 
     return parts;
-  };
-
-  // Render content based on the presence of <a> tag
-  const renderContent = (content) => {
-    if (containsAnchorTag(content)) {
-      return (
-        <div
-          dangerouslySetInnerHTML={{ __html: renderContentAsHTML(content) }}
-        />
-      );
-    } else {
-      return renderContentAsReact(content);
-    }
   };
 
   return (
@@ -129,7 +92,9 @@ const FAQ = ({ title, content }) => {
           <Typography>{title}</Typography>
         </AccordionSummary>
         <AccordionDetails style={{ backgroundColor: "white", color: "black" }}>
-          <Typography component="div">{renderContent(content)}</Typography>
+          <Typography component="div">
+            {renderContentWithLinks(content)}
+          </Typography>
         </AccordionDetails>
       </Accordion>
     </Box>
