@@ -8,8 +8,8 @@ import Etapa2Paso1A from "../Titulacion/Etapa2Paso1/Etapa2Paso1A";
 import CuadroTexto from "../CuadroTexto/CuadroTexto";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import FlechaAtras from "../Flechas/FlechaAtras";
-import pdf from "../../pdfs/FORMATO registro comité pro-graduación.pdf";
 import Boton from "../Boton.jsx/Boton";
+import pdf from "../../pdfs/FormatoRegistro.pdf";
 
 function GridTitulacion() {
   const theme = useTheme();
@@ -119,7 +119,7 @@ function GridTitulacion() {
           >
             <FlechaAtras
               textoIzquierda="Regresar a inicio"
-              rutaIzquierda="/Seguimiento-de-Egresados-UABC"
+              rutaIzquierda="/page"
             />
           </Grid>
         </Grid>

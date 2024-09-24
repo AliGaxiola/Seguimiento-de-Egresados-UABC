@@ -131,7 +131,7 @@ function NavBar() {
         >
           <Link
             component={RouterLink}
-            to="/Seguimiento-de-Egresados-UABC"
+            to="/page"
             underline="none"
             sx={{
               color: "white",

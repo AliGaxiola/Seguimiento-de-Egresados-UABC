@@ -5,7 +5,7 @@ import Paso3D from "../Paso3/Paso3D";
 import Paso3T from "../Paso3/Paso3T";
 import Flechas from "../../Flechas/Flechas";
 import Boton from "../../Boton.jsx/Boton";
-import pdf from "../../../pdfs/Pasos Titulación-GENERAL.pdf";
+import pdf from "../../../pdfs/PasosTitulacion.pdf";
 
 function GridTitulacionTres() {
   return (
@@ -60,7 +60,7 @@ function GridTitulacionTres() {
               textoIzquierda="Regresar al paso 1 y 2"
               textoDerecha="Regresar a inicio"
               rutaIzquierda="/pasos-titulacion"
-              rutaDerecha="/Seguimiento-de-Egresados-UABC"
+              rutaDerecha="/page"
             />
           </Grid>
         </Grid>
